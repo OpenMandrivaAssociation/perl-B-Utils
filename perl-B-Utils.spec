@@ -1,21 +1,18 @@
+%define upstream_name    B-Utils
+%define upstream_version 0.07
 
-%define realname   B-Utils
-%define version    0.07
-%define release    %mkrel 1
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    Easily build XS extensions that depend on XS extensions
-Source:     http://www.cpan.org/modules/by-module/B/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl-devel
-
-
-
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
   sub foo {
@@ -38,7 +35,7 @@ has the following optree:
  6        <;> nextstate(main -371 bah.pl:9) v/2 ->7
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -59,5 +56,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
