@@ -11,6 +11,7 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(ExtUtils::Depends)
 BuildRequires: perl-devel
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
