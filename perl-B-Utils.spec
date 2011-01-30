@@ -1,9 +1,9 @@
 %define upstream_name    B-Utils
-%define upstream_version 0.11
+%define upstream_version 0.12
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Easily build XS extensions that depend on XS extensions
 License:    GPL+ or Artistic
