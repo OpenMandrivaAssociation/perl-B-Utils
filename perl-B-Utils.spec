@@ -1,5 +1,5 @@
 %define upstream_name    B-Utils
-%define upstream_version 0.14
+%define upstream_version 0.15
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
