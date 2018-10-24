@@ -13,6 +13,12 @@ Source0:    http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_
 Source100:  %{name}.rpmlintrc
 
 BuildRequires: perl(ExtUtils::Depends)
+BuildRequires: perl(ExtUtils::MakeMaker) >= 7.40.0
+BuildRequires: perl(ExtUtils::CBuilder)
+BuildRequires: perl(Test::More) >= 1.1.9
+BuildRequires: perl(Exporter)
+BuildRequires: perl(Scalar::Util)
+BuildRequires: perl(Task::Weaken)
 BuildRequires: perl-devel
 
 %description
