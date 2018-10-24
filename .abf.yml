@@ -1,5 +1,6 @@
 removed_sources:
   B-Utils-0.15.tar.gz: 344555734d1b3d7373d98a00b75505e123e44d43
   B-Utils-0.21.tar.gz: 013193cedceaeec2797896938f0df074d05f46f9
-sources:
   B-Utils-0.25.tar.gz: 544758cae3f46fa57150ac49294f2128164b78e1
+sources:
+  B-Utils-0.27.tar.gz: 927c9642a0aff247172ea0457ee86ece6fe29ce7
