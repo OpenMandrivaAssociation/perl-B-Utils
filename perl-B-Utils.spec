@@ -1,15 +1,15 @@
 %define upstream_name    B-Utils
 %define upstream_version 0.27
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %{upstream_version}
+Release:	4
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        http://search.cpan.org/dist/B-Utils
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-%{upstream_version}.tar.gz
 Source100:  %{name}.rpmlintrc
 
 BuildRequires:	make
