@@ -8,7 +8,7 @@ Summary:    Easily build XS extensions that depend on XS extensions
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/B-Utils
+Url:        https://github.com/jbenjore/b-utils
 Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-%{upstream_version}.tar.gz
 Source100:  %{name}.rpmlintrc
 
