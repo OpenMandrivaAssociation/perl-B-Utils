@@ -1,15 +1,14 @@
 %define upstream_name    B-Utils
-%define upstream_version 0.27
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	4
+Version:    0.27
+Release:	5
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/jbenjore/b-utils
-Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-%{version}.tar.gz
 Source100:  %{name}.rpmlintrc
 
 BuildRequires:	make
@@ -43,7 +42,7 @@ has the following optree:
  6        <;> nextstate(main -371 bah.pl:9) v/2 ->7
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
