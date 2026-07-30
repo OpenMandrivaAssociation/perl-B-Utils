@@ -2,7 +2,7 @@
 %define upstream_version 0.27
 Name:       perl-%{upstream_name}
 Version:	0.27
-Release:	2
+Release:	3
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
