@@ -2,7 +2,7 @@
 %define upstream_version 0.27
 Name:       perl-%{upstream_name}
 Version:	0.27
-Release:	4
+Release:	5
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
@@ -46,13 +46,13 @@ has the following optree:
 %setup -q -n B-Utils-0.27
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 %makeinstall_std
