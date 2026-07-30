@@ -1,14 +1,15 @@
 %define upstream_name    B-Utils
+%define upstream_version 0.27
 Name:       perl-%{upstream_name}
-Version:    0.27
-Release:	5
+Version:	0.27
+Release:	1
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/jbenjore/b-utils
-Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-0.27.tar.gz
 Source100:  %{name}.rpmlintrc
 
 BuildRequires:	make
