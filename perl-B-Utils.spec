@@ -2,7 +2,7 @@
 %define upstream_version 0.270.0
 Name:       perl-%{upstream_name}
 Version:	0.270.0
-Release:	4
+Release:	5
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
@@ -13,7 +13,6 @@ Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Utils-0.27.tar.gz
 Source100:  %{name}.rpmlintrc
 
 BuildRequires:	make
-BuildRequires:	clang
 BuildRequires: perl(ExtUtils::Depends)
 BuildRequires: perl(ExtUtils::MakeMaker) >= 7.40.0
 BuildRequires: perl(ExtUtils::CBuilder)
