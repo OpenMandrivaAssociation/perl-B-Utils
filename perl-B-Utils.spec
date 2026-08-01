@@ -1,8 +1,8 @@
 %define upstream_name    B-Utils
-%define upstream_version 0.27
+%define upstream_version 0.270.0
 Name:       perl-%{upstream_name}
-Version:	0.27
-Release:	6
+Version:	0.270.0
+Release:	1
 
 Summary:    Easily build XS extensions that depend on XS extensions
 
